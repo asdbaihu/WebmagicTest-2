@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+
+
+<mapper namespace="com.webmagic.dao.FundHkDao">
+
+    <resultMap id="BaseResultMap" type="com.webmagic.model.FundHk">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="JJJYDM" property="JJJYDM" jdbcType="VARCHAR"/>
+        <result column="GGRQ" property="GGRQ" jdbcType="VARCHAR"/>
+        <result column="JZRQ" property="JZRQ" jdbcType="VARCHAR"/>
+        <result column="DWJZ" property="DWJZ" jdbcType="VARCHAR"/>
+        <result column="DWJZBZ" property="DWJZBZ" jdbcType="VARCHAR"/>
+        <result column="MXZDWZCJZ" property="MXZDWZCJZ" jdbcType="VARCHAR"/>
+        <result column="MXZDWZCJZBZ" property="MXZDWZCJZBZ" jdbcType="VARCHAR"/>
+        <result column="MXZDWJZSJXJ" property="MXZDWJZSJXJ" jdbcType="VARCHAR"/>
+        <result column="MXZDWJZSJXJBZ" property="MXZDWJZSJXJBZ" jdbcType="VARCHAR"/>
+        <result column="FXFEZS" property="FXFEZS" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="BaseColumnList">id,JJJYDM,GGRQ,JZRQ,DWJZ,DWJZBZ,MXZDWZCJZ,MXZDWZCJZBZ,MXZDWJZSJXJ,MXZDWJZSJXJBZ,FXFEZS</sql>
+
+    <insert id="insertFundHk" parameterType="com.webmagic.model.FundHk">
+        INSERT INTO JJJZB(
+        <include refid="BaseColumnList"/>
+        )
+        VALUES (
+        #{id,jdbcType=INTEGER},
+        #{JJJYDM,jdbcType=VARCHAR},
+        #{GGRQ,jdbcType=VARCHAR},
+        #{JZRQ,jdbcType=VARCHAR},
+        #{DWJZ,jdbcType=VARCHAR},
+        #{DWJZBZ,jdbcType=VARCHAR},
+        #{MXZDWZCJZ,jdbcType=VARCHAR},
+        #{MXZDWZCJZBZ,jdbcType=VARCHAR},
+        #{MXZDWJZSJXJ,jdbcType=VARCHAR},
+        #{MXZDWJZSJXJBZ,jdbcType=VARCHAR},
+        #{FXFEZS,jdbcType=VARCHAR}
+
+        )
+    </insert>
+
+</mapper>

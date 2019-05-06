@@ -1,6 +1,7 @@
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.webmagic.common.uitls.DownLoadFile;
 import org.jsoup.Jsoup;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;

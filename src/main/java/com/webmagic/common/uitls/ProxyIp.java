@@ -1,3 +1,5 @@
+package com.webmagic.common.uitls;
+
 import java.io.Serializable;
 
 public class ProxyIp implements Serializable {

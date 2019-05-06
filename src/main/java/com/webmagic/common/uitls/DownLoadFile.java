@@ -1,3 +1,5 @@
+package com.webmagic.common.uitls;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -48,6 +50,7 @@ public class DownLoadFile {
      * @throws IOException
      */
     public static  byte[] readInputStream(InputStream inputStream) throws IOException {
+
         byte[] buffer = new byte[1024];
         int len = 0;
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
