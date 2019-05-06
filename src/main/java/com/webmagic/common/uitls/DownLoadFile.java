@@ -63,10 +63,11 @@ public class DownLoadFile {
 
     public static void main(String[] args) throws Exception {
         String path = "F:\\url.txt";
-        List<String> urls = FileContext.getFileContext(path);
+        FileContext fileContext = new FileContext();
+        List<String> urls = fileContext.getFileContext(path);
         int count = 0;
         for (int i = 0; i < urls.size(); i++) {
-            downLoadByUrl(urls.get(i),i+".PDF","F:\\下载\\港交所");
+            downLoadByUrl(urls.get(i),i+".PDF","D:\\文档下载");
             count++;
             System.out.println("已下载"+count+"个文件");
 
