@@ -1,0 +1,18 @@
+CREATE TABLE `jjjzb` (
+  `id` int(8) NOT NULL,
+  `JJJYDM` varchar(255) NOT NULL,
+  `GGRQ` varchar(255) DEFAULT NULL,
+  `JZRQ` varchar(255) DEFAULT NULL,
+  `DWJZ` varchar(255) DEFAULT NULL,
+  `DWJZBZ` varchar(255) DEFAULT NULL,
+  `MXZDWZCJZ` varchar(255) DEFAULT NULL,
+  `MXZDWZCJZBZ` varchar(255) DEFAULT NULL,
+  `MXZDWJZSJXJ` varchar(255) DEFAULT NULL,
+  `MXZDWJZSJXJBZ` varchar(255) DEFAULT NULL,
+  `FXFEZS` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `jjjzb` VALUES (1, '12345', NULL, NULL, '1.1', '1', '1', '1', '1', '1', '1');
+INSERT INTO `jjjzb` VALUES (2, '12345', NULL, NULL, '1.1', '1', NULL, '1', '1', '1', '1');
