@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 
 public class DownLoadFile {
 
@@ -57,13 +58,16 @@ public class DownLoadFile {
         return bos.toByteArray();
     }
 
-    public static void main(String[] args) {
-        try{
+    public static void main(String[] args) throws Exception {
+        String path = "F:\\url.txt";
+        List<String> urls = FileContext.getFileContext(path);
+        int count = 0;
+        for (int i = 0; i < urls.size(); i++) {
+            downLoadByUrl(urls.get(i),i+".PDF","F:\\下载\\港交所");
+            count++;
+            System.out.println("已下载"+count+"个文件");
 
-            downLoadByUrl("https://www.gfam.com.cn/file/gf_download?doc_id=399241",
-                    "6693549.PDF","F:\\下载");
-        }catch (Exception e) {
-            // TODO: handle exception
         }
+       System.out.println(count);
     }
 }
