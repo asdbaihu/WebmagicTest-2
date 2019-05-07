@@ -19,14 +19,14 @@
         <result column="MXZDWJZSJXJBZ" property="MXZDWJZSJXJBZ" jdbcType="VARCHAR"/>
         <result column="FXFEZS" property="FXFEZS" jdbcType="VARCHAR"/>
     </resultMap>
-    <sql id="BaseColumnList">id,JJJYDM,GGRQ,JZRQ,DWJZ,DWJZBZ,MXZDWZCJZ,MXZDWZCJZBZ,MXZDWJZSJXJ,MXZDWJZSJXJBZ,FXFEZS</sql>
+    <sql id="BaseColumnList">JJJYDM,GGRQ,JZRQ,DWJZ,DWJZBZ,MXZDWZCJZ,MXZDWZCJZBZ,MXZDWJZSJXJ,MXZDWJZSJXJBZ,FXFEZS,BZ</sql>
 
-    <insert id="insertFundHk" parameterType="com.webmagic.model.FundHk">
+    <insert id="insertFundHk" parameterType="com.webmagic.model.FundHk" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO JJJZB(
         <include refid="BaseColumnList"/>
         )
         VALUES (
-        #{id,jdbcType=INTEGER},
+
         #{JJJYDM,jdbcType=VARCHAR},
         #{GGRQ,jdbcType=VARCHAR},
         #{JZRQ,jdbcType=VARCHAR},
@@ -37,7 +37,7 @@
         #{MXZDWJZSJXJ,jdbcType=VARCHAR},
         #{MXZDWJZSJXJBZ,jdbcType=VARCHAR},
         #{FXFEZS,jdbcType=VARCHAR}
-
+        #{BZ,jdbcType=VARCHAR}
         )
     </insert>
 
