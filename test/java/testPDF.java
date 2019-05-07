@@ -32,10 +32,11 @@ public class testPDF {
     }
     @Test
     public void testPdf() {
+        long start = System.currentTimeMillis();
         DateTools dateTools = new DateTools();
         SqlSession sqlSession = sqlSessionFactory.openSession(true);
         FundHkDao fundHkDao = sqlSession.getMapper(FundHkDao.class);
-        FundHk fundHk = new FundHk();
+
         FileName fileName = new FileName();
         String path = "F:\\下载\\港交所\\";
         List<String> pdfList = fileName.getFileName(path);
@@ -58,154 +59,177 @@ public class testPDF {
                         stripper.setStartPage(i + 1);
                         stripper.setEndPage(i + 1);
                         String text = stripper.getText(document);
-                        String s = text.replaceAll(" ", "").replaceAll(",", "");
-
-                            System.out.println(s);
-
-                        System.out.println(text.trim());
-                        //System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-");
+                        String s = text.substring(0,50);
+                        System.out.println(s+"0000000000000000000000000000000000000");
                         //用回车键来分隔几个元素
                         String[] ss = text.replaceAll(" ", "").replaceAll(",", "").split("\n");
-                        for (int x = 0; x < 8; x++) {
-                            System.out.println(ss[x]);
-                            if (ss[x].contains("代號")) {
-                                String reg = "[0-9]{4}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String JJJYDM = matcher.group();
-                                    System.out.println(JJJYDM + "``````````````````````````````");
-                                    fundHk.setJJJYDM(JJJYDM);
-                                }
+                        FundHk fundHk = new FundHk();
+                        if(s.contains("代號")){
 
-                            }
-                            if (ss[x].contains("日期")) {
-                                String reg = "[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String GGRQ = matcher.group();
-                                    System.out.println(GGRQ + "GGRQ``````````````````````````````");
-                                    fundHk.setGGRQ(GGRQ);
-                                }
-                            }
-                            if (ss[x].contains("淨值截")) {
+                            for (int x = 0; x < 8; x++) {
 
-                                String reg1 = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
-                                Pattern pattern1 = Pattern.compile(reg1);
-                                Matcher matcher1 = pattern1.matcher(ss[x]);
+                                System.out.println(ss[x]);
+                                if (ss[x].contains("代號")) {
+                                    String reg = "[0-9]{4}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String JJJYDM = matcher.group();
+                                        System.out.println(JJJYDM + "``````````````````````````````");
+                                        fundHk.setJJJYDM(JJJYDM);
 
-                                if (matcher1.find()) {
-                                    String DWJZ = matcher1.group();
-                                    System.out.println(DWJZ + "DWJZ``````````````````````````````");
-                                    fundHk.setDWJZ(DWJZ);
-                                }
-                                if (ss[x].contains("截")) {
-                                    String reg2 = "(|-)[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日";
-                                    Pattern pattern2 = Pattern.compile(reg2);
-                                    Matcher matcher2 = pattern2.matcher(ss[x]);
-                                    if (matcher2.find()) {
-                                        String JZRQ = matcher2.group();
-                                        System.out.println(JZRQ + "JZRQ``````````````````````````````");
-                                        fundHk.setJZRQ(JZRQ);
                                     }
+                                    continue;
+
+                                }
+                                if (ss[x].contains("日期")) {
+                                    String reg = "[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String GGRQ = matcher.group();
+                                        System.out.println(GGRQ + "GGRQ``````````````````````````````");
+                                        fundHk.setGGRQ(GGRQ);
+                                    }
+                                    continue;
+                                }
+                                if (ss[x].contains("淨值截")) {
+
+                                    String reg1 = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
+                                    Pattern pattern1 = Pattern.compile(reg1);
+                                    Matcher matcher1 = pattern1.matcher(ss[x]);
+
+                                    if (matcher1.find()) {
+                                        String DWJZ = matcher1.group();
+                                        System.out.println(DWJZ + "DWJZ``````````````````````````````");
+                                        fundHk.setDWJZ(DWJZ);
+                                    }
+                                    if (ss[x].contains("截")) {
+                                        String reg2 = "(|-)[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日";
+                                        Pattern pattern2 = Pattern.compile(reg2);
+                                        Matcher matcher2 = pattern2.matcher(ss[x]);
+                                        if (matcher2.find()) {
+                                            String JZRQ = matcher2.group();
+                                            System.out.println(JZRQ + "JZRQ``````````````````````````````");
+                                            fundHk.setJZRQ(JZRQ);
+                                        }
+                                    }
+
+                                    continue;
                                 }
 
-                            }
-
-                            if (ss[x].contains("購單位的資")) {
-                                String reg = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
+                                if (ss[x].contains("購單位的資")) {
+                                    String reg = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
 //id,GGRQ,JZRQ,DWJZ,DWJZBZ,MXZDWZCJZ,MXZDWZCJZBZ,MXZDWJZSJXJ,MXZDWJZSJXJBZ,FXFEZS
-                                if (matcher.find()) {
-                                    String MXZDWZCJZ = matcher.group();
-                                    System.out.println(MXZDWZCJZ + "MXZDWZCJZ``````````````````````````````");
-                                    fundHk.setMXZDWZCJZ(MXZDWZCJZ);
-                                }
+                                    if (matcher.find()) {
+                                        String MXZDWZCJZ = matcher.group();
+                                        System.out.println(MXZDWZCJZ + "MXZDWZCJZ``````````````````````````````");
+                                        fundHk.setMXZDWZCJZ(MXZDWZCJZ);
+                                    }
+                                    continue;
 
-                            }
-                            if (ss[x].contains("實際現金")) {
-                                String reg = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String MXZDWJZSJXJ = matcher.group();
-                                    System.out.println(MXZDWJZSJXJ + "MXZDWJZSJXJ``````````````````````````````");
-                                    fundHk.setMXZDWJZSJXJ(MXZDWJZSJXJ);
                                 }
-                            }
-                            if (ss[x].contains("單位總數")) {
-                                String reg = "[0-9]{1,9}\\.[0-9]{1,9}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String FXFEZS = matcher.group();
-                                    System.out.println(FXFEZS + "FXFEZS``````````````````````````````");
-                                    fundHk.setFXFEZS(FXFEZS);
+                                if (ss[x].contains("實際現金")) {
+                                    String reg = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String MXZDWJZSJXJ = matcher.group();
+                                        System.out.println(MXZDWJZSJXJ + "MXZDWJZSJXJ``````````````````````````````");
+                                        fundHk.setMXZDWJZSJXJ(MXZDWJZSJXJ);
+                                    }
+                                    continue;
                                 }
-                            }
-                            if (ss[x].contains("ETF(2810)")) {
-                                String reg = "[0-9]{4}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String JJJYDM = matcher.group();
-                                    System.out.println(JJJYDM + "JJJYDM``````````````````````````````");
-                                    fundHk.setJJJYDM(JJJYDM);
+                                if (ss[x].contains("單位總數")) {
+                                    String reg = "[0-9]{1,9}\\.[0-9]{1,9}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String FXFEZS = matcher.group();
+                                        System.out.println(FXFEZS + "FXFEZS``````````````````````````````");
+                                        fundHk.setFXFEZS(FXFEZS);
+                                    }
+                                    break;
                                 }
 
 
                             }
-                            if (ss[x].matches("(20|21)[0-9]{6}\r")) {
-                                String GGRQ = ss[x].replaceAll("\r", "");
-                                fundHk.setGGRQ(GGRQ);
-                                System.out.println(GGRQ + "GGRQ``````````````````````````````");
-                                if (dateTools.dateToWeek(GGRQ).equals("星期一")) {
+                        }else {
+                            for (int x = 0; x < 8; x++) {
+                                if (ss[x].contains("ETF(2810)")) {
+                                    String reg = "[0-9]{4}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String JJJYDM = matcher.group();
+                                        System.out.println(JJJYDM + "JJJYDM``````````````````````````````");
+                                        fundHk.setJJJYDM(JJJYDM);
+                                    }
 
-                                    int intGGRQ = Integer.valueOf(GGRQ) - 3;
-                                    String stringGGRQ = intGGRQ + "";
-                                    String BZ = "111111111无截止日期，根据公告日期计算所得-----"+dateTools.dateToWeek(GGRQ);
-                                    fundHk.setJZRQ(stringGGRQ);
-                                    fundHk.setBZ(BZ);
-                                    System.out.println(stringGGRQ);
-
-                                }
-                                if (!dateTools.dateToWeek(GGRQ).equals("星期一")) {
-
-                                    int intGGRQ = Integer.valueOf(GGRQ) - 1;
-                                    String stringGGRQ = intGGRQ + "";
-                                    String BZ = "2222222222无截止日期，根据公告日期计算所得"+dateTools.dateToWeek(GGRQ);
-                                    fundHk.setBZ(BZ);
-                                    fundHk.setJZRQ(stringGGRQ);
-                                    System.out.println(intGGRQ);
+                                    continue;
 
                                 }
+                                if (ss[x].matches("(20|21)[0-9]{6}\r")) {
+                                    String GGRQ = ss[x].replaceAll("\r", "");
+                                    fundHk.setGGRQ(GGRQ);
+                                    System.out.println(GGRQ + "GGRQ``````````````````````````````");
+                                    if (dateTools.dateToWeek(GGRQ).equals("星期一")) {
 
+                                        int intGGRQ = Integer.valueOf(GGRQ) - 3;
+                                        String stringGGRQ = intGGRQ + "";
+                                        String BZ = "111111111无截止日期，根据公告日期计算所得-----"+dateTools.dateToWeek(GGRQ);
+                                        fundHk.setJZRQ(stringGGRQ);
+                                        fundHk.setBZ(BZ);
+                                        System.out.println(stringGGRQ);
+                                        continue;
+
+                                    }
+                                    if (!dateTools.dateToWeek(GGRQ).equals("星期一")) {
+
+                                        int intGGRQ = Integer.valueOf(GGRQ) - 1;
+                                        String stringGGRQ = intGGRQ + "";
+                                        String BZ = "2222222222无截止日期，根据公告日期计算所得"+dateTools.dateToWeek(GGRQ);
+                                        fundHk.setBZ(BZ);
+                                        fundHk.setJZRQ(stringGGRQ);
+                                        System.out.println(intGGRQ);
+                                        continue;
+
+                                    }
+
+                                }
+                                if (ss[x].contains("(1)")) {
+                                    String reg = "(|-)[0-9]{1,5}\\.[0-9]{1,9}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String DWJZ = matcher.group();
+                                        System.out.println(DWJZ + "JJJYDM``````````````````````````````");
+                                        fundHk.setDWJZ(DWJZ);
+                                    }
+                                    continue;
+                                }
+                                if (ss[x].contains("(2)")) {
+                                    String reg = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
+                                    Pattern pattern = Pattern.compile(reg);
+                                    Matcher matcher = pattern.matcher(ss[x]);
+                                    if (matcher.find()) {
+                                        String FXFEZS = matcher.group();
+                                        System.out.println(FXFEZS + "FXFEZS``````````````````````````````");
+                                        fundHk.setFXFEZS(FXFEZS);
+                                    }
+
+                                    break;
+                                }
                             }
-                            if (ss[x].contains("(1)")) {
-                                String reg = "(|-)[0-9]{1,5}\\.[0-9]{1,9}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String DWJZ = matcher.group();
-                                    System.out.println(DWJZ + "JJJYDM``````````````````````````````");
-                                    fundHk.setDWJZ(DWJZ);
-                                }
-                            }
-                            if (ss[x].contains("(2)")) {
-                                String reg = "(|-)[0-9]{1,9}\\.[0-9]{1,9}";
-                                Pattern pattern = Pattern.compile(reg);
-                                Matcher matcher = pattern.matcher(ss[x]);
-                                if (matcher.find()) {
-                                    String FXFEZS = matcher.group();
-                                    System.out.println(FXFEZS + "FXFEZS``````````````````````````````");
-                                    fundHk.setFXFEZS(FXFEZS);
-                                }
-                            }
-
                         }
+
+
+
+
                         fundHkDao.insertFundHk(fundHk);
+
                         System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-");
 
 
@@ -221,7 +245,8 @@ public class testPDF {
                 }
             }
         }
-
+        long end = System.currentTimeMillis();
+        System.out.println("---------------" + (start - end) + "---------------");
 
 
 
