@@ -18,6 +18,7 @@
         <result column="MXZDWJZSJXJ" property="MXZDWJZSJXJ" jdbcType="VARCHAR"/>
         <result column="MXZDWJZSJXJBZ" property="MXZDWJZSJXJBZ" jdbcType="VARCHAR"/>
         <result column="FXFEZS" property="FXFEZS" jdbcType="VARCHAR"/>
+        <result column="BZ" property="BZ" jdbcType="VARCHAR"/>
     </resultMap>
     <sql id="BaseColumnList">JJJYDM,GGRQ,JZRQ,DWJZ,DWJZBZ,MXZDWZCJZ,MXZDWZCJZBZ,MXZDWJZSJXJ,MXZDWJZSJXJBZ,FXFEZS,BZ</sql>
 
@@ -36,7 +37,7 @@
         #{MXZDWZCJZBZ,jdbcType=VARCHAR},
         #{MXZDWJZSJXJ,jdbcType=VARCHAR},
         #{MXZDWJZSJXJBZ,jdbcType=VARCHAR},
-        #{FXFEZS,jdbcType=VARCHAR}
+        #{FXFEZS,jdbcType=VARCHAR},
         #{BZ,jdbcType=VARCHAR}
         )
     </insert>
