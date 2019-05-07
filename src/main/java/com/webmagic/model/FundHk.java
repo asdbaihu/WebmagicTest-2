@@ -25,6 +25,8 @@ public class FundHk implements Serializable {
     private String MXZDWJZSJXJBZ;
     //发行份额总数
     private String FXFEZS;
+    //备注
+    private String BZ;
 
 
     public Integer getId() {
@@ -113,5 +115,13 @@ public class FundHk implements Serializable {
 
     public void setFXFEZS(String FXFEZS) {
         this.FXFEZS = FXFEZS;
+    }
+
+    public String getBZ() {
+        return BZ;
+    }
+
+    public void setBZ(String BZ) {
+        this.BZ = BZ;
     }
 }
