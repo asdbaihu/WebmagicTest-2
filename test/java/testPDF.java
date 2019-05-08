@@ -70,15 +70,19 @@ public class testPDF {
 
                                 System.out.println(ss[x]);
                                 if (ss[x].contains("代號")) {
-                                    String reg = "[0-9]{4}";
+                                    String reg = "[0-9]{3,6}";
                                     Pattern pattern = Pattern.compile(reg);
                                     Matcher matcher = pattern.matcher(ss[x]);
                                     if (matcher.find()) {
                                         String JJJYDM = matcher.group();
                                         System.out.println(JJJYDM + "``````````````````````````````");
                                         fundHk.setJJJYDM(JJJYDM);
-
+                                    }else {
+                                        fundHk.setBZ(pdfName);
+                                        System.out.println(pdfName);
                                     }
+
+
                                     continue;
 
                                 }
@@ -166,6 +170,9 @@ public class testPDF {
                                         String JJJYDM = matcher.group();
                                         System.out.println(JJJYDM + "JJJYDM``````````````````````````````");
                                         fundHk.setJJJYDM(JJJYDM);
+                                    }else {
+                                        fundHk.setBZ(pdfName);
+                                        System.out.println(pdfName);
                                     }
 
                                     continue;
@@ -179,7 +186,7 @@ public class testPDF {
 
                                         int intGGRQ = Integer.valueOf(GGRQ) - 3;
                                         String stringGGRQ = intGGRQ + "";
-                                        String BZ = "111111111无截止日期，根据公告日期计算所得-----"+dateTools.dateToWeek(GGRQ);
+                                        String BZ = "无截止日期，根据公告日期计算所得-----"+dateTools.dateToWeek(GGRQ);
                                         fundHk.setJZRQ(stringGGRQ);
                                         fundHk.setBZ(BZ);
                                         System.out.println(stringGGRQ);
@@ -190,7 +197,7 @@ public class testPDF {
 
                                         int intGGRQ = Integer.valueOf(GGRQ) - 1;
                                         String stringGGRQ = intGGRQ + "";
-                                        String BZ = "2222222222无截止日期，根据公告日期计算所得"+dateTools.dateToWeek(GGRQ);
+                                        String BZ = "无截止日期，根据公告日期计算所得"+dateTools.dateToWeek(GGRQ);
                                         fundHk.setBZ(BZ);
                                         fundHk.setJZRQ(stringGGRQ);
                                         System.out.println(intGGRQ);
