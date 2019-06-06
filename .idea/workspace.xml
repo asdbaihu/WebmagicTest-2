@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6813bf31-67fa-40d1-a3e8-2c2c80a10351" name="Default" comment="集成Spring,Mybatis框架">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_fontbox_2_0_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_pdfbox_2_0_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PDF2List.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PdfUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webmagic/controller/DownLoadPdf.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/java/test.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebmagicTest.iml" afterPath="$PROJECT_DIR$/WebmagicTest.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DownLoadFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DownLoadFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/FileContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/FileContext.java" />
+    <list default="true" id="6813bf31-67fa-40d1-a3e8-2c2c80a10351" name="Default" comment="新增基金年报交易席位解析  &#10;可导出excel">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__cn_hutool_hutool_all_4_5_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__com_alibaba_easyexcel_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__org_apache_commons_commons_compress_1_14.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/MigLayout.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/lib/miglayout-core-javadoc.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/lib/miglayout-core-sources.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/lib/miglayout-core.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/lib/miglayout-swing-javadoc.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/lib/miglayout-swing-sources.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/lib/miglayout-swing.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/ExcelListener.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/dao/DealExcelPropertyDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/model/DealExcelProperty.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/DealExcelPropertyDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/test/java/exceltext.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../WebmagicTest/test/java/test2.java" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../WebmagicTest/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/WebmagicTest.iml" afterPath="$PROJECT_DIR$/../WebmagicTest/WebmagicTest.iml" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/pom.xml" afterPath="$PROJECT_DIR$/../WebmagicTest/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/DownLoadFile.java" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/DownLoadFile.java" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/getpost.java" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/getpost.java" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/test.java" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/test.java" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/../WebmagicTest/src/main/resources/jdbc.properties" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/test/java/test.java" afterPath="$PROJECT_DIR$/../WebmagicTest/test/java/test.java" />
+      <change beforePath="$PROJECT_DIR$/../WebmagicTest/test/java/testPDF.java" afterPath="$PROJECT_DIR$/../WebmagicTest/test/java/testPDF.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,113 +53,215 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DownLoadFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DownLoadFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-453">
-              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getpost.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/getpost.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-735">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DownLoadPdf.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/controller/DownLoadPdf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PDF2List.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PDF2List.java">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="200">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PdfUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PdfUtil.java">
+      <file leaf-file-name="testPDF.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/testPDF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="126" column="36" lean-forward="false" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+            <state relative-caret-position="220">
+              <caret line="37" column="68" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="37" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DealExcelProperty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/model/DealExcelProperty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="201" column="32" lean-forward="false" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3352#3368#0" expanded="true" />
+                <element signature="e#1683#1684#0" expanded="true" />
+                <element signature="e#1712#1713#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#1853#1854#0" expanded="true" />
+                <element signature="e#1896#1897#0" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+                <element signature="e#1961#1962#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2028#2029#0" expanded="true" />
+                <element signature="e#2060#2061#0" expanded="true" />
+                <element signature="e#2093#2094#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#2202#2203#0" expanded="true" />
+                <element signature="e#2233#2234#0" expanded="true" />
+                <element signature="e#2260#2261#0" expanded="true" />
+                <element signature="e#2300#2301#0" expanded="true" />
+                <element signature="e#2332#2333#0" expanded="true" />
+                <element signature="e#2365#2366#0" expanded="true" />
+                <element signature="e#2394#2395#0" expanded="true" />
+                <element signature="e#2438#2439#0" expanded="true" />
+                <element signature="e#2474#2475#0" expanded="true" />
+                <element signature="e#2505#2506#0" expanded="true" />
+                <element signature="e#2532#2533#0" expanded="true" />
+                <element signature="e#2572#2573#0" expanded="true" />
+                <element signature="e#2604#2605#0" expanded="true" />
+                <element signature="e#2637#2638#0" expanded="true" />
+                <element signature="e#2666#2667#0" expanded="true" />
+                <element signature="e#2710#2711#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#2777#2778#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2844#2845#0" expanded="true" />
+                <element signature="e#2876#2877#0" expanded="true" />
+                <element signature="e#2909#2910#0" expanded="true" />
+                <element signature="e#2938#2939#0" expanded="true" />
+                <element signature="e#2982#2983#0" expanded="true" />
+                <element signature="e#3018#3019#0" expanded="true" />
+                <element signature="e#3049#3050#0" expanded="true" />
+                <element signature="e#3076#3077#0" expanded="true" />
+                <element signature="e#3116#3117#0" expanded="true" />
+                <element signature="e#3148#3149#0" expanded="true" />
+                <element signature="e#3181#3182#0" expanded="true" />
+                <element signature="e#3210#3211#0" expanded="true" />
+                <element signature="e#3254#3255#0" expanded="true" />
+                <element signature="e#3290#3291#0" expanded="true" />
+                <element signature="e#3321#3322#0" expanded="true" />
+                <element signature="e#3348#3349#0" expanded="true" />
+                <element signature="e#3388#3389#0" expanded="true" />
+                <element signature="e#3420#3421#0" expanded="true" />
+                <element signature="e#3453#3454#0" expanded="true" />
+                <element signature="e#3482#3483#0" expanded="true" />
+                <element signature="e#3526#3527#0" expanded="true" />
+                <element signature="e#3562#3563#0" expanded="true" />
+                <element signature="e#3593#3594#0" expanded="true" />
+                <element signature="e#3620#3621#0" expanded="true" />
+                <element signature="e#3660#3661#0" expanded="true" />
+                <element signature="e#3692#3693#0" expanded="true" />
+                <element signature="e#3725#3726#0" expanded="true" />
+                <element signature="e#3754#3755#0" expanded="true" />
+                <element signature="e#3798#3799#0" expanded="true" />
+                <element signature="e#3834#3835#0" expanded="true" />
+                <element signature="e#3865#3866#0" expanded="true" />
+                <element signature="e#3892#3893#0" expanded="true" />
+                <element signature="e#3932#3933#0" expanded="true" />
+                <element signature="e#3964#3965#0" expanded="true" />
+                <element signature="e#3995#3996#0" expanded="true" />
+                <element signature="e#4022#4023#0" expanded="true" />
+                <element signature="e#4062#4063#0" expanded="true" />
+                <element signature="e#4094#4095#0" expanded="true" />
+                <element signature="e#4127#4128#0" expanded="true" />
+                <element signature="e#4155#4156#0" expanded="true" />
+                <element signature="e#4198#4199#0" expanded="true" />
+                <element signature="e#4232#4233#0" expanded="true" />
+                <element signature="e#4261#4262#0" expanded="true" />
+                <element signature="e#4288#4289#0" expanded="true" />
+                <element signature="e#4326#4327#0" expanded="true" />
+                <element signature="e#4358#4359#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyIp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/ProxyIp.java">
+      <file leaf-file-name="test2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/test2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/readFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/FileContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="124" column="57" lean-forward="true" selection-start-line="124" selection-start-column="57" selection-end-line="124" selection-end-column="57" />
               <folding>
-                <element signature="e#433#441#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1570#1578#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/test.java">
+      <file leaf-file-name="exceltext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/exceltext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="220">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1053#1067#0" expanded="true" />
+                <element signature="e#1155#1163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DealExcelPropertyDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/DealExcelPropertyDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+              <folding>
+                <marker date="1559825289880" expanded="true" signature="1972:2711" ph="INSERT INTO JYXW... " />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FundHkDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/FundHkDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+              <folding>
+                <marker date="1557215029720" expanded="true" signature="1423:1926" ph="INSERT INTO JJJZB... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunkAnnualReportService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FundHkServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FundHkServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +271,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -154,10 +284,24 @@
       <find>property</find>
       <find>webmagic</find>
       <find>namespace</find>
+      <find>useGeneratedKeys</find>
+      <find>0.025295</find>
+      <find>0.105627</find>
+      <find>3.853510</find>
+      <find>2813</find>
+      <find>2810</find>
+      <find>股票投资及佣金支付情况</find>
+      <find>666666666</find>
+      <find>基金租用</find>
+      <find>逆向策略</find>
+      <find>沪深300增强</find>
+      <find>for</find>
+      <find>005377</find>
+      <find>BaseResultMap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../WebmagicTest" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -167,33 +311,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/javaIO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DownLoadPDF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/URLAvailability.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test5.java" />
-        <option value="$PROJECT_DIR$/src/main/java/getpost.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/DownLoadFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FileContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/getpost.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/dao/FundHK.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/model/FundHK.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/FunDHKDao.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/ProxyIp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/ProxyIp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/readFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ixzzcgl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/dao/FundHkDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/FunDHKDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/service/impl/FundHkServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/FundHkDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/webmagic/controller/test.java" />
         <option value="$PROJECT_DIR$/test/java/test.java" />
@@ -205,6 +322,46 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PDF2List.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PdfUtil.java" />
+        <option value="$PROJECT_DIR$/test/java/testPdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DateTools.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/model/FundHk.java" />
+        <option value="$PROJECT_DIR$/test/java/test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FundHkDao.xml" />
+        <option value="$PROJECT_DIR$/test/java/testPDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/FileName.java" />
+        <option value="$PROJECT_DIR$/test/java/testPDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DownLoadFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/getpost.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ixzzcgl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DownLoadFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/readFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/getpost.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PdfUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/FileContext.java" />
+        <option value="$PROJECT_DIR$/test/java/testPDF.java" />
+        <option value="$PROJECT_DIR$/test/java/test2.java" />
+        <option value="$PROJECT_DIR$/test/java/testPDF.java" />
+        <option value="$PROJECT_DIR$/test/java/test2.java" />
+        <option value="$PROJECT_DIR$/test/java/test2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PdfUtil.java" />
+        <option value="$PROJECT_DIR$/test/java/test2.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/test/java/test2.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/pom.xml" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/ExcelListener.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/test/java/exceltext.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/test/java/testPDF.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportService.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/dao/DealExcelPropertyDao.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/DealExcelPropertyDao.fxml" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/DealExcelPropertyDao.xml" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/test/java/test.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/model/DealExcelProperty.java" />
+        <option value="$PROJECT_DIR$/../WebmagicTest/test/java/test2.java" />
       </list>
     </option>
   </component>
@@ -230,11 +387,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="224" />
-    <option name="y" value="97" />
-    <option name="width" value="1682" />
-    <option name="height" value="917" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="385" />
+    <option name="y" value="50" />
+    <option name="width" value="1301" />
+    <option name="height" value="769" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -251,8 +408,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,15 +442,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebmagicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebmagicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="webmagic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,38 +450,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="webmagic" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebmagicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebmagicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="webmagic" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="uitls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebmagicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebmagicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="webmagic" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebmagicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebmagicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="webmagic" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -342,7 +459,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="webmagic" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -352,19 +468,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="webmagic" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebmagicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebmagicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="webmagic" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,21 +501,23 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mainboard-project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/..////////////////////mainboard-project" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.webmagic.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MLT\IdeaProjects\WebmagicTest\src\main\resources" />
     </key>
@@ -431,51 +537,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PdfUtil">
+  <component name="RunManager" selected="JUnit.test2.testPdf2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="DownLoadPdf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.webmagic.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.webmagic.controller.DownLoadPdf" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebmagicTest" />
-      <envs />
-    </configuration>
-    <configuration name="PdfUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.webmagic.common.uitls.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.webmagic.common.uitls.PdfUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebmagicTest" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -489,34 +557,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <envs />
-    </configuration>
-    <configuration name="getpost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.webmagic.common.uitls.getpost" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebmagicTest" />
-      <envs />
-    </configuration>
-    <configuration name="test5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="test5" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebmagicTest" />
       <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -539,14 +579,94 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="exceltext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WebmagicTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="exceltext" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="exceltext.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WebmagicTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="exceltext" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="test2.testPdf2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WebmagicTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test2" />
+      <option name="METHOD_NAME" value="testPdf2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="testPDF.testPdf (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WebmagicTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testPDF" />
+      <option name="METHOD_NAME" value="testPdf" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="WebmagicTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -600,19 +720,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.test5" />
-      <item index="1" class="java.lang.String" itemvalue="Application.getpost" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.test.test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DownLoadPdf" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PdfUtil" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.testPDF.testPdf (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.test2.testPdf2" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.exceltext.test1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.exceltext" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.test.test2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PdfUtil" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DownLoadPdf" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.test.test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.getpost" />
-        <item index="4" class="java.lang.String" itemvalue="Application.test5" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.test2.testPdf2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.test.test2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.exceltext.test1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.exceltext" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.testPDF.testPdf (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -644,6 +764,25 @@
       <workItem from="1557139724006" duration="268000" />
       <workItem from="1557139994774" duration="1381000" />
       <workItem from="1557141385842" duration="17160000" />
+      <workItem from="1557192226090" duration="26013000" />
+      <workItem from="1557275442098" duration="20371000" />
+      <workItem from="1557451530308" duration="2999000" />
+      <workItem from="1557479484125" duration="90000" />
+      <workItem from="1557479631119" duration="907000" />
+      <workItem from="1557737764583" duration="1165000" />
+      <workItem from="1558343711369" duration="67000" />
+      <workItem from="1558416590971" duration="2411000" />
+      <workItem from="1558675739267" duration="235000" />
+      <workItem from="1558676023843" duration="212000" />
+      <workItem from="1559031423008" duration="975000" />
+      <workItem from="1559044311144" duration="1031000" />
+      <workItem from="1559131166455" duration="3669000" />
+      <workItem from="1559216472906" duration="4681000" />
+      <workItem from="1559280653706" duration="2841000" />
+      <workItem from="1559291234293" duration="358000" />
+      <workItem from="1559636901068" duration="10176000" />
+      <workItem from="1559725683016" duration="7370000" />
+      <workItem from="1559803653945" duration="18709000" />
     </task>
     <task id="LOCAL-00001" summary="集成Spring,Mybatis框架">
       <created>1557154328268</created>
@@ -652,73 +791,126 @@
       <option name="project" value="LOCAL" />
       <updated>1557154328268</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增备注字段">
+      <created>1557214363562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557214363562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增备注字段">
+      <created>1557214387581</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557214387581</updated>
+    </task>
+    <task id="LOCAL-00004" summary="解析PDF测试  1060个文件 耗时30分钟">
+      <created>1557221131372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557221131372</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增一个字段">
+      <created>1557221171445</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557221171445</updated>
+    </task>
+    <task id="LOCAL-00006" summary="日期转星期">
+      <created>1557221207152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557221207152</updated>
+    </task>
+    <task id="LOCAL-00007" summary="获取文件名">
+      <created>1557221233974</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557221233974</updated>
+    </task>
+    <task id="LOCAL-00008" summary="产品代码可能为空,新增判断">
+      <created>1557277882710</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557277882711</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_test - 2019.05.06 at 22h 18m 49s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test2_testPdf2 - 2019.06.06 at 19h 34m 19s.xml">
+      <configuration name="test2.testPdf2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 26m 04s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test2_testPdf2 - 2019.06.06 at 19h 43m 39s.xml">
+      <configuration name="test2.testPdf2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 29m 34s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test2_testPdf2 - 2019.06.06 at 19h 48m 39s.xml">
+      <configuration name="test2.testPdf2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 31m 22s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test2_testPdf2 - 2019.06.06 at 19h 49m 49s.xml">
+      <configuration name="test2.testPdf2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 35m 40s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test2_testPdf2 - 2019.06.06 at 21h 02m 11s.xml">
+      <configuration name="test2.testPdf2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 36m 50s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test2_testPdf2 - 2019.06.06 at 21h 04m 59s.xml">
+      <configuration name="test2.testPdf2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 40m 21s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test_test2 - 2019.06.06 at 20h 26m 08s.xml">
+      <configuration name="test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 42m 32s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test_test2 - 2019.06.06 at 20h 26m 35s.xml">
+      <configuration name="test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_test - 2019.05.06 at 22h 45m 50s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
+    <history-entry file="test_test2 - 2019.06.06 at 20h 27m 15s.xml">
+      <configuration name="test.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_test2 - 2019.06.06 at 20h 29m 17s.xml">
+      <configuration name="test.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92116000" />
+    <option name="totallyTimeSpent" value="196396000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="224" y="97" width="1682" height="917" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32435897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32162163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3649289" sideWeight="0.5060435" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3679487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30810812" sideWeight="0.49395648" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331689" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.4955681" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16773778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983926" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33513513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,336 +921,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="集成Spring,Mybatis框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成Spring,Mybatis框架" />
+    <MESSAGE value="新增备注字段" />
+    <MESSAGE value="解析PDF测试  1060个文件 耗时30分钟" />
+    <MESSAGE value="新增一个字段" />
+    <MESSAGE value="日期转星期" />
+    <MESSAGE value="获取文件名" />
+    <MESSAGE value="产品代码可能为空,新增判断" />
+    <MESSAGE value="新增基金年报交易席位解析  &#10;可导出excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增基金年报交易席位解析  &#10;可导出excel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="31" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="fundHk" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar!/org/slf4j/helpers/NamedLoggerBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar!/org/slf4j/helpers/MarkerIgnoringBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar!/org/slf4j/impl/Log4jLoggerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar!/org/slf4j/LoggerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.3/webmagic-core-0.7.3.jar!/us/codecraft/webmagic/selector/Html.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.3/webmagic-core-0.7.3.jar!/us/codecraft/webmagic/selector/HtmlNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.3/webmagic-core-0.7.3.jar!/us/codecraft/webmagic/thread/CountableThreadPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar!/org/slf4j/impl/Log4jLoggerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.3/webmagic-core-0.7.3.jar!/us/codecraft/webmagic/Page.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/parser/ParserConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/parser/JSONLexerBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/parser/JSONScanner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/parser/DefaultJSONParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar!/org/jsoup/Jsoup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1660">
-          <caret line="1966" column="0" lean-forward="false" selection-start-line="1966" selection-start-column="0" selection-end-line="1966" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DownLoadPDF.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/javaIO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test4.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test5.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/URLAvailability.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar!/org/jsoup/helper/HttpConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
-          <folding>
-            <marker date="1543122001062" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1543122001062" expanded="false" signature="140:1682" ph="..." />
-            <marker date="1543122001062" expanded="true" signature="2520:2616" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="2664:2760" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="2810:2984" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="3026:3214" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="3268:3279" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="3335:3341" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="3372:3379" ph="{}" />
-            <marker date="1543122001062" expanded="true" signature="3416:3471" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="3511:3804" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="3847:3906" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="3959:4023" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4075:4221" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4265:4327" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4374:4439" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4504:4583" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4633:4772" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4818:4879" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="4946:5027" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="5096:5179" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="5242:5319" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="5374:5467" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="5550:5659" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="5714:6068" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="6116:6667" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="6742:7047" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="7105:7500" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="7549:7613" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="7671:7737" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="7798:8132" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="8190:8256" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="8317:8651" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="8697:8758" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="8805:8906" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="8954:9056" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="9128:9222" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="9273:9284" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="9300:9306" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="9376:9432" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="9485:9496" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="9512:9518" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="9591:9648" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="9704:9775" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="9853:10220" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="10292:11829" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="10466:10549" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="10651:10757" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="10784:10795" ph="{}" />
-            <marker date="1543122001062" expanded="true" signature="10850:10980" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="11009:11024" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="11040:11050" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="11109:11245" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="11276:11291" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="11309:11319" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="11395:11550" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="11592:11607" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="11626:11636" ph=" }" />
-            <marker date="1543122001062" expanded="false" signature="11677:11692" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="11719:11729" ph=" }" />
-            <marker date="1543122001062" expanded="false" signature="11763:11778" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="11813:11823" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="11964:31268" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="12570:12585" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="12597:12607" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="12695:13061" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="13163:13238" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="13382:18246" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="18279:18294" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="18317:18327" ph=" }" />
-            <marker date="1543122001062" expanded="false" signature="18366:18381" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="18407:18417" ph=" }" />
-            <marker date="1543122001062" expanded="false" signature="18450:18465" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="18485:18495" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="18560:18632" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="18669:18684" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="18708:18718" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="18771:19167" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="19198:19678" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="19716:19907" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="20020:21252" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="21316:21517" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="21360:21506" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="21439:21462" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="21474:21492" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="21597:22697" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="21732:22114" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="21827:21850" ph="{}" />
-            <marker date="1543122001062" expanded="true" signature="21945:21968" ph="{}" />
-            <marker date="1543122001062" expanded="false" signature="22035:22062" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="22074:22096" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="22831:23708" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="23809:24581" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="24657:26623" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="26710:27208" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="27342:29506" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="29595:30127" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="30230:31262" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="31400:36059" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="31913:32683" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="32713:32728" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="32746:32756" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="32815:32883" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="32952:33083" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="33113:33128" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="33160:33170" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="33230:33411" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="33445:33460" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="33489:33499" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="33568:33731" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="33773:33788" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="33816:33826" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="33913:34001" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="34044:34059" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="34088:34098" ph=" }" />
-            <marker date="1543122001062" expanded="false" signature="34148:34163" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="34199:34209" ph=" }" />
-            <marker date="1543122001062" expanded="false" signature="34269:34284" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="34321:34331" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="34420:34510" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="34554:34569" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="34599:34609" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="34700:34792" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="34873:35010" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="35073:35088" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="35105:35115" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="35186:35252" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="35289:35304" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="35321:35331" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="35393:35502" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="35534:35549" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="35568:35578" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="35656:35959" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="36000:36015" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="36043:36053" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="36177:41658" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="36317:36424" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="36450:36465" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="36481:36491" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="36523:36646" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="36678:36693" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="36712:36722" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="36763:36898" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="36942:37199" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="37261:37530" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="37591:38608" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="38661:38917" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="38965:39110" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="39181:39278" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="39323:39596" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="39642:39657" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="39677:39687" ph=" }" />
-            <marker date="1543122001062" expanded="true" signature="39750:40267" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="40332:40743" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="40787:40919" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="40972:41191" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="41239:41371" ph="{...}" />
-            <marker date="1543122001062" expanded="true" signature="41416:41561" ph="{...}" />
-            <marker date="1543122001062" expanded="false" signature="41607:41622" ph=" { " />
-            <marker date="1543122001062" expanded="false" signature="41642:41652" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebmagicTest.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="48" column="11" lean-forward="false" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
@@ -1066,66 +949,336 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="129">
+          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/dao/FundHkDao.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/mapping/MappedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="112">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/controller/test.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/reflection/TypeParameterResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/session/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/reflection/factory/DefaultObjectFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/io/ClassLoaderWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/io/Resources.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.11/pdfbox-2.0.11.jar!/org/apache/pdfbox/io/MemoryUsageSetting.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.11/pdfbox-2.0.11.jar!/org/apache/pdfbox/pdmodel/PDDocument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="689" column="0" lean-forward="false" selection-start-line="689" selection-start-column="0" selection-end-line="689" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.11/pdfbox-2.0.11.jar!/org/apache/pdfbox/text/LegacyPDFStreamEngine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.11/pdfbox-2.0.11.jar!/org/apache/pdfbox/text/PDFTextStripper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="549" column="0" lean-forward="false" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/reflection/ParamNameResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/binding/MapperMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/binding/MapperProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/WebmagicTest.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/service/impl/FundHkService.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/PDF2List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/ProxyIp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/DateTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/FileContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/FileName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/readFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/getpost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/test01.jfd" />
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/test01.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/DownLoadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="621" column="19" lean-forward="false" selection-start-line="621" selection-start-column="19" selection-end-line="621" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/PdfUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/ixzzcgl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/service/impl/FundHkServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/controller/DownLoadPdf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="-80">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.1/easyexcel-1.1.1.jar!/com/alibaba/excel/ExcelWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/common/uitls/ExcelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#389#390#0" expanded="false" />
-            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#363#371#0" expanded="false" />
+            <element signature="e#855#856#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#930#931#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/java/test.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FundHkService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/dao/FundHkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/model/FundHk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1031#1032#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FundHkDao.xml">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="260">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <marker date="1557153717531" expanded="true" signature="1319:1822" ph="INSERT INTO JJJZB... " />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/dao/DealExcelPropertyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FundHkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/testPDF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="37" column="68" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="37" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/service/impl/FunkAnnualReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/FundHkDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding>
+            <marker date="1557215029720" expanded="true" signature="1423:1926" ph="INSERT INTO JJJZB... " />
           </folding>
         </state>
       </provider>
@@ -1133,176 +1286,136 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ixzzcgl.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/resources/mapper/DealExcelPropertyDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/newJson.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/url.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="79" lean-forward="true" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/model/FundHk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="520">
+          <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding>
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2122#2123#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
+            <marker date="1559825289880" expanded="true" signature="1972:2711" ph="INSERT INTO JYXW... " />
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/getpost.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/exceltext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-735">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1053#1067#0" expanded="true" />
+            <element signature="e#1155#1163#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.3/webmagic-core-0.7.3.jar!/us/codecraft/webmagic/Spider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="380" column="16" lean-forward="false" selection-start-line="380" selection-start-column="16" selection-end-line="380" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/FileContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#433#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/DownLoadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-453">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/ProxyIp.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/src/main/java/com/webmagic/model/DealExcelProperty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/readFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PDF2List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/common/uitls/PdfUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="126" column="36" lean-forward="false" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+        <state relative-caret-position="282">
+          <caret line="201" column="32" lean-forward="false" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3352#3368#0" expanded="true" />
+            <element signature="e#1683#1684#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2028#2029#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2093#2094#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#2202#2203#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+            <element signature="e#2260#2261#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2332#2333#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2438#2439#0" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+            <element signature="e#2604#2605#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
+            <element signature="e#2666#2667#0" expanded="true" />
+            <element signature="e#2710#2711#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="e#2876#2877#0" expanded="true" />
+            <element signature="e#2909#2910#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2982#2983#0" expanded="true" />
+            <element signature="e#3018#3019#0" expanded="true" />
+            <element signature="e#3049#3050#0" expanded="true" />
+            <element signature="e#3076#3077#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
+            <element signature="e#3181#3182#0" expanded="true" />
+            <element signature="e#3210#3211#0" expanded="true" />
+            <element signature="e#3254#3255#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
+            <element signature="e#3348#3349#0" expanded="true" />
+            <element signature="e#3388#3389#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+            <element signature="e#3453#3454#0" expanded="true" />
+            <element signature="e#3482#3483#0" expanded="true" />
+            <element signature="e#3526#3527#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+            <element signature="e#3620#3621#0" expanded="true" />
+            <element signature="e#3660#3661#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
+            <element signature="e#3725#3726#0" expanded="true" />
+            <element signature="e#3754#3755#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3834#3835#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3932#3933#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4062#4063#0" expanded="true" />
+            <element signature="e#4094#4095#0" expanded="true" />
+            <element signature="e#4127#4128#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4198#4199#0" expanded="true" />
+            <element signature="e#4232#4233#0" expanded="true" />
+            <element signature="e#4261#4262#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4326#4327#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webmagic/controller/DownLoadPdf.java">
+    <entry file="file://$PROJECT_DIR$/../WebmagicTest/test/java/test2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="214">
+          <caret line="124" column="57" lean-forward="true" selection-start-line="124" selection-start-column="57" selection-end-line="124" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1570#1578#0" expanded="true" />
           </folding>
         </state>
       </provider>

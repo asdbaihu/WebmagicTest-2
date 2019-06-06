@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+
+
+<mapper namespace="com.webmagic.dao.DealExcelPropertyDao">
+
+    <resultMap id="BaseResultMap" type="com.webmagic.model.DealExcelProperty">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="JJMC" property="JJMC" jdbcType="VARCHAR"/>
+        <result column="JJJC" property="JJJC" jdbcType="VARCHAR"/>
+        <result column="JJZDM" property="JJZDM" jdbcType="INTEGER"/>
+
+        <result column="QSname" property="QSname" jdbcType="DOUBLE"/>
+        <result column="QSnum" property="QSnum" jdbcType="INTEGER"/>
+        <result column="GPJE" property="GPJE" jdbcType="DOUBLE"/>
+        <result column="GPJEZB" property="GPJEZB" jdbcType="DOUBLE"/>
+        <result column="QSJE" property="QSJE" jdbcType="DOUBLE"/>
+        <result column="QSJEZB" property="QSJEZB" jdbcType="DOUBLE"/>
+        <result column="ZQJE" property="ZQJE" jdbcType="DOUBLE"/>
+        <result column="ZQJEZB" property="ZQJEZB" jdbcType="DOUBLE"/>
+        <result column="HGJE" property="HGJE" jdbcType="DOUBLE"/>
+        <result column="HGJEZB" property="HGJEZB" jdbcType="DOUBLE"/>
+        <result column="QZJE" property="QZJE" jdbcType="DOUBLE"/>
+        <result column="QZJEZB" property="QZJEZB" jdbcType="DOUBLE"/>
+        <result column="JJJE" property="JJJE" jdbcType="DOUBLE"/>
+        <result column="JJJEZB" property="JJJEZB" jdbcType="DOUBLE"/>
+        <result column="QHJE" property="QHJE" jdbcType="DOUBLE"/>
+        <result column="QHJEZB" property="QHJEZB" jdbcType="DOUBLE"/>
+    </resultMap>
+    <sql id="jyxwList">JJMC,JJJC,JJZDM,QSname,QSnum,GPJE,GPJEZB,QSJE,QSJEZB,ZQJE,ZQJEZB,HGJE,HGJEZB,QZJE,QZJEZB,JJJE,JJJEZB,QHJE,QHJEZB</sql>
+
+    <insert id="insertFundJYXW" parameterType="com.webmagic.model.DealExcelProperty" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO JYXW(
+        <include refid="jyxwList"/>
+        )
+        VALUES (
+        #{JJMC,jdbcType=VARCHAR},
+        #{JJJC,jdbcType=VARCHAR},
+        #{JJZDM,jdbcType=INTEGER},
+        #{QSname,jdbcType=VARCHAR},
+        #{QSnum,jdbcType=INTEGER},
+        #{GPJE,jdbcType=DOUBLE},
+        #{GPJEZB,jdbcType=DOUBLE},
+        #{QSJE,jdbcType=DOUBLE},
+        #{QSJEZB,jdbcType=DOUBLE},
+        #{ZQJE,jdbcType=DOUBLE},
+        #{ZQJEZB,jdbcType=DOUBLE},
+        #{HGJE,jdbcType=DOUBLE},
+        #{HGJEZB,jdbcType=DOUBLE},
+        #{QZJE,jdbcType=DOUBLE},
+        #{QZJEZB,jdbcType=DOUBLE},
+        #{JJJE,jdbcType=DOUBLE},
+        #{JJJEZB,jdbcType=DOUBLE},
+        #{QHJE,jdbcType=DOUBLE},
+        #{QHJEZB,jdbcType=DOUBLE}
+        )
+    </insert>
+
+</mapper>

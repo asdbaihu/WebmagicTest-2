@@ -38,7 +38,7 @@ public class testPDF {
         FundHkDao fundHkDao = sqlSession.getMapper(FundHkDao.class);
 
         FileName fileName = new FileName();
-        String path = "F:\\下载\\港交所\\";
+        String path = "F:\\下载\\港交所1\\";
         List<String> pdfList = fileName.getFileName(path);
 
 
@@ -50,6 +50,7 @@ public class testPDF {
                 if (pdfName.endsWith(".PDF")) {
                     document = PDDocument.load(file);
                     int pageSize = document.getNumberOfPages();
+                    System.out.println(pageSize+"123123132131313212123");
                     // 一页一页读取
                     for (int i = 0; i < pageSize; i++) {
                         // 文本内容

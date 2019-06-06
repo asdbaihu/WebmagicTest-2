@@ -3,7 +3,6 @@ package com.webmagic.common.uitls;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.webmagic.common.uitls.DownLoadFile;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import java.io.IOException;
@@ -75,7 +74,7 @@ public class getpost {
 
     public static void main(String[] args){
 
-        String savePath = "F:\\下载";
+        String savePath = "F:\\下载\\港交所1";
         String[] Listcode =new String[]{"AE0003","AE0005","AE0008","AE0009","AE0015","AE0018","AE0022","AE0020","S04081","S71707","AE4003","AE4006","S45466","S45982","S49393","S51370","S55046","S57225","S40531","SP0344","SP6464","S57230","SQ6206","SG1574","SQ7525","SU4432","SAA420","SAH970","SAS984","SZ1563","SEC330","SEC588","SGF091","SGJ156","SGF462","SEW269"};
         String postUrl = "https://www.firstcapital.com.cn/servlet/json";
         String pdfUrl = "https://www.firstcapital.com.cn";
@@ -113,36 +112,21 @@ public class getpost {
         JSONArray jsonArray = JSON.parseArray(newJson);
         for (Object obj : jsonArray) {
             JSONObject jsonObject = (JSONObject) obj;
-            if(jsonObject.getString("title").contains("2019")){
-                if(jsonObject.getString("title").contains("管理报告")){
-                    if(jsonObject.getString("title").contains("第一季")){
-                        String PDFnane = jsonObject.getString("modified_date")+" "+jsonObject.getString("title");
-                        String url = pdfUrl+jsonObject.getString("link_url");
-                        try {
-                            DownLoadFile.downLoadByUrl(url,PDFnane+".PDF",savePath);
-
-                            downloadCount++;
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-
-                    }
-                    if(jsonObject.getString("title").contains("第1季")){
+            String tiele = jsonObject.getString("title");
+            if(tiele.contains("2019")&&tiele.contains("管理报告")&&tiele.contains("第1季")){
                         String PDFnane = jsonObject.getString("create_date")+" "+jsonObject.getString("title");
                         String url = pdfUrl+jsonObject.getString("link_url");
                         try {
                             DownLoadFile.downLoadByUrl(url,PDFnane+".PDF",savePath);
-                            System.out.println(PDFnane);
-                            System.out.println(url);
                             downloadCount++;
+                            System.out.println("成功下载了第"+downloadCount+"个文件");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                    }
-                }
+
             }
 
         }
-        System.out.println("下载了"+downloadCount+"个文件");
+        System.out.println("一共下载了"+downloadCount+"个文件");
     }
 }

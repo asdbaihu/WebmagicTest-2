@@ -43,9 +43,19 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.57</version>
+    </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.5.10</version>
         </dependency>
-
-
+        <!-- easyexcel -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>1.1.1</version>
+        </dependency>
         <!-- 单元测试 -->
         <dependency>
             <groupId>junit</groupId>
@@ -62,7 +72,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.41</version>
+            <version>8.0.11</version>
             <scope>runtime</scope>
         </dependency>
 

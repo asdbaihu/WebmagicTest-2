@@ -19,9 +19,7 @@ public class test implements PageProcessor {
     public void process(Page page) {
 
         List<String> ipList = page.getHtml().xpath("//table[@id='ip_list']/tbody/tr").all();
-        for (String s : ipList){
-            System.out.println(s);
-        }
+
         List<ProxyIp> result = new ArrayList<>();
 
         if(ipList != null && ipList.size() > 0){
