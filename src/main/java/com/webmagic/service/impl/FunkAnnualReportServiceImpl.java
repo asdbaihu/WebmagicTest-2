@@ -11,8 +11,19 @@ public class FunkAnnualReportServiceImpl implements FunkAnnualReportService{
     private DealExcelPropertyDao dealExcelPropertyDao;
 
     @Override
-    public void insertFundJYXW(DealExcelProperty DealExcelProperty) {
-        dealExcelPropertyDao.insertFundJYXW(DealExcelProperty);
+    public void insertFundJYXW(DealExcelProperty dealExcelProperty) {
+        dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
 
+    }
+
+    @Override
+    public String qsNameIsNull(String QSname) {
+
+        return dealExcelPropertyDao.qsNameIsNull(QSname);
+    }
+
+    @Override
+    public void updateDealExcelPropertyByQSname(DealExcelProperty dealExcelProperty) {
+        dealExcelPropertyDao.updateDealExcelPropertyByQSname(dealExcelProperty);
     }
 }

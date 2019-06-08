@@ -3,7 +3,6 @@ package com.webmagic.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
-
 import java.util.Date;
 
 
@@ -14,9 +13,12 @@ public class DealExcelProperty extends BaseRowModel {
 
     private String JJJC;
 
-    private Integer JJZDM;
+    private String JJZDM;
 
-    private Date XGSJ;
+    //private Date XGSJ;
+
+    @ExcelProperty(value = {"序号","序号"},index = 0)
+    private Integer NUM;
 
     @ExcelProperty(value = {"券商名称","券商名称"},index = 0)
     private String QSname;
@@ -195,19 +197,21 @@ public class DealExcelProperty extends BaseRowModel {
         this.JJJC = JJJC;
     }
 
-    public Integer getJJZDM() {
+    public String getJJZDM() {
         return JJZDM;
     }
 
-    public void setJJZDM(Integer JJZDM) {
+    public void setJJZDM(String JJZDM) {
         this.JJZDM = JJZDM;
     }
 
-    public Date getXGSJ() {
-        return XGSJ;
+
+
+    public Integer getNUM() {
+        return NUM;
     }
 
-    public void setXGSJ(Date XGSJ) {
-        this.XGSJ = XGSJ;
+    public void setNUM(Integer NUM) {
+        this.NUM = NUM;
     }
 }

@@ -48,11 +48,32 @@ public class test {
         DealExcelPropertyDao dealExcelPropertyDao = sqlSession.getMapper(DealExcelPropertyDao.class);
         DealExcelProperty dealExcelProperty = new DealExcelProperty();
 
-        dealExcelProperty.setJJZDM(123456);
+        dealExcelProperty.setJJZDM("");
         dealExcelProperty.setQSname("213213");
         dealExcelProperty.setQSnum(1);
 
         dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
     }
+
+
+    @Test
+    public void test3(){
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
+        DealExcelPropertyDao dealExcelPropertyDao = sqlSession.getMapper(DealExcelPropertyDao.class);
+
+
+        DealExcelProperty dealExcelProperty = new DealExcelProperty();
+        dealExcelProperty.setZQJE(6663.11);
+        dealExcelProperty.setZQJEZB(16.11);
+        dealExcelProperty.setQSname("海通证券");
+        String a = dealExcelPropertyDao.qsNameIsNull("海通证券");
+        if (a==null){
+            dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
+        }else {
+            dealExcelPropertyDao.updateDealExcelPropertyByQSname(dealExcelProperty);
+        }
+
+    }
+
 
 }
