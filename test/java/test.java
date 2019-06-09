@@ -1,4 +1,7 @@
 
+import com.alibaba.excel.ExcelWriter;
+import com.alibaba.excel.metadata.Sheet;
+import com.alibaba.excel.support.ExcelTypeEnum;
 import com.webmagic.dao.DealExcelPropertyDao;
 import com.webmagic.dao.FundHkDao;
 import com.webmagic.model.DealExcelProperty;
@@ -9,6 +12,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class test {
     private SqlSessionFactory sqlSessionFactory;
@@ -74,6 +83,30 @@ public class test {
         }else {
             dealExcelPropertyDao.updateDealExcelPropertyByQSname(dealExcelProperty);
         }
+
+    }
+
+    //导出Excel测试
+    @Test
+    public void test4() throws FileNotFoundException {
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
+        DealExcelPropertyDao dealExcelPropertyDao = sqlSession.getMapper(DealExcelPropertyDao.class);
+
+        DealExcelProperty dealExcelProperty = new DealExcelProperty();
+        List<DealExcelProperty> dealExcelProperties =  dealExcelPropertyDao.selectAllByJZRQ(dealExcelProperty,"2018-12-31");
+        for (DealExcelProperty excelProperty : dealExcelProperties) {
+
+            System.out.println(excelProperty.toString());
+        }
+
+        OutputStream out = new FileOutputStream("F:\\下载\\卢冕\\77.xlsx");
+        ExcelWriter writer = new ExcelWriter(out, ExcelTypeEnum.XLSX);
+        Sheet sheet = new Sheet(1, 0,DealExcelProperty.class);
+        sheet.setSheetName("交易席位");
+        writer.write(dealExcelProperties,sheet);
+        writer.finish();
+
+
 
     }
 
