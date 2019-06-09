@@ -31,7 +31,7 @@
 
 
     </resultMap>
-    <sql id="jyxwList">JJMC,JJJC,JJZDM,NUM,QSname,QSnum,GPJE,GPJEZB,QSJE,QSJEZB,ZQJE,ZQJEZB,HGJE,HGJEZB,QZJE,QZJEZB,JJJE,JJJEZB,QHJE,QHJEZB</sql>
+    <sql id="jyxwList">JJMC,JJJC,JJZDM,JZRQ,NUM,QSname,QSnum,GPJE,GPJEZB,QSJE,QSJEZB,ZQJE,ZQJEZB,HGJE,HGJEZB,QZJE,QZJEZB,JJJE,JJJEZB,QHJE,QHJEZB</sql>
 
     <insert id="insertFundJYXW" parameterType="com.webmagic.model.DealExcelProperty" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO JYXW(
@@ -41,6 +41,7 @@
         #{JJMC,jdbcType=VARCHAR},
         #{JJJC,jdbcType=VARCHAR},
         #{JJZDM,jdbcType=VARCHAR},
+        #{JZRQ,jdbcType=VARCHAR},
         #{NUM,jdbcType=INTEGER},
         #{QSname,jdbcType=VARCHAR},
         #{QSnum,jdbcType=INTEGER},
@@ -66,7 +67,7 @@
             resultType="String">
         select QSname from jyxw
         <where>
-            QSname = #{QSname} AND JJZDM = #{JJZDM}
+            QSname = #{QSname} AND JJZDM = #{JJZDM} AND JZRQ = #{JZRQ}
         </where>
     </select>
 
@@ -107,7 +108,7 @@
 
         </set>
         <where>
-            QSname = #{QSname}
+            QSname = #{QSname} AND JJZDM = #{JJZDM} AND JZRQ = #{JZRQ}
         </where>
     </update>
 

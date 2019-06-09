@@ -43,6 +43,12 @@ public class test2 {
         return null;
     }
 
+    /**
+     *
+     * @param reg 正则表达式
+     * @param text  文本
+     * @return
+     */
     private static List<String> regString2List(String reg,String text){
         Pattern pattern = Pattern.compile(reg);
         Matcher matcher = pattern.matcher(text);
@@ -57,7 +63,7 @@ public class test2 {
         Pattern pattern = Pattern.compile(reg);
         Matcher matcher = pattern.matcher(text);
         String qsname = "";
-        if (matcher.find()) {
+        while (matcher.find()) {
             qsname = matcher.group();
         }
         return qsname;
@@ -90,15 +96,43 @@ public class test2 {
        return list;
     }
 
-    private static List<String> removeDuplicate2(List<String> list){
-        ArrayList<String> listTemp = new ArrayList<String>();
-        for(int i=0;i<list.size();i++){
-            if(!listTemp.contains(reg2String("[\\u4e00-\\u9fa5]{1,9}", list.get(i)))){
-                listTemp.add(list.get(i));
-            }
+    /**
+     * d读取全部PDF
+     * @param
+     * @return
+     */
+
+    private static String allText(PDDocument document){
+
+        try {
+            // 文本内容
+            PDFTextStripper stripper = new PDFTextStripper();
+            int pageSize = document.getNumberOfPages();
+            // 设置按顺序输出
+            stripper.setSortByPosition(true);
+            stripper.setStartPage(1);
+            stripper.setEndPage(pageSize);
+            return stripper.getText(document);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return listTemp;
+        return null;
     }
+
+    private static boolean regJudgeContains(String text){
+
+        String reg = "[a-zA-Z]{4,20}";
+        Pattern pattern = Pattern.compile(reg);
+        Matcher matcher = pattern.matcher(text);
+        return matcher.find();
+    }
+    @Test
+    public void test23(){
+        String a = "Citigroup Glob";
+        boolean b = regJudgeContains(a);
+        System.out.println(b);
+
+}
 
     @Test
     public void testlist(){
@@ -145,12 +179,21 @@ public class test2 {
     @Test
     public void testPdf2() {
         long start = System.currentTimeMillis();
+        //已处理计数
+        int countZS = 0;
+        //未处理计数
+        int countYCL = 0;
+        //转型基金计数
+        int countZX = 0;
+        //QDII计数
+        int countQDII = 0;
+        //入库
+        int countRK = 0;
         FileName fileName = new FileName();
         String path = "F:\\下载\\基金年报\\";
         List<String> pdfList = fileName.getFileName(path);
         SqlSession sqlSession = sqlSessionFactory.openSession(true);
         DealExcelPropertyDao dealExcelPropertyDao = sqlSession.getMapper(DealExcelPropertyDao.class);
-
         for (String pdfName : pdfList) {
             File file = new File(pdfName);
             InputStream is = null;
@@ -158,43 +201,62 @@ public class test2 {
             try {
                 if (pdfName.endsWith(".pdf")) {
                     document = PDDocument.load(file);
+                    //获取pdf页数
                     int pageSize = document.getNumberOfPages();
-                    System.out.println(pageSize);
+                    //System.out.println(pageSize);
                     DealExcelProperty dealExcelProperty = new DealExcelProperty();
-                    String JJMC = null,JJJC = null,JJZDM = null;
+                    String JJMC = null,JJJC = null,JJZDM = null,JZRQ="2018-12-31";
+
                     // 一页一页读取
                     for (int i = 0; i < pageSize; i++) {
                         String text = Objects.requireNonNull(loadPDF(i,1, document)).replaceAll(",","");
-                        System.out.println(text);
+                        //System.out.println(text);
+                        if (text.contains("转型前")||text.contains("转型后")){
+                            System.out.println("转型基金----跳过");
+                            countZX++;
+                            break;
+                        }
                         if(text !=null && text.contains("基金简介") && text.contains("简称") && text.contains("代码")){
                             String[] newText = text.split("\n");
                             for (String s : newText) {
                                 if (s.contains("基金名称")) {
                                     JJMC = StringUtils.substringAfter(s, " ").replaceAll(" ","");
-                                    System.out.println(JJMC);
+                                    //System.out.println(JJMC);
 
                                 } else if (s.contains("基金简称")) {
                                     JJJC = StringUtils.substringAfter(s, " ").replaceAll(" ","");
-                                    System.out.println(JJJC);
+                                    //System.out.println(JJJC);
                                 } else if (s.contains("基金主代码")) {
                                     String reg = "[0-9]{6}";
                                     Pattern pattern = Pattern.compile(reg);
                                     Matcher matcher = pattern.matcher(s);
                                     if (matcher.find()) {
                                         JJZDM = matcher.group();
-                                        System.out.println(JJZDM);
+                                        //System.out.println(JJZDM);
                                     }
                                     break;
                                 }
                             }
+                            System.out.println("正在处理基金名称---------"+JJMC+"\n基金简称---------"+JJJC+"\n基金代码---------"+JJZDM);
 
                         }else if(text !=null && text.contains("券商名称") && text.contains("股票交易") && text.contains("应支付该券商的佣金")){
-                            String newText = Objects.requireNonNull(loadPDF(i,3, document)).replaceAll(",","");
+                            String newText = Objects.requireNonNull(loadPDF(i,3, document)).replaceAll(",","").replaceAll("\r","");
                             String reg = "[\\u4e00-\\u9fa5_()]{2,9}\\s([1-9]{0,2}|-)\\s((|-)[0-9]{1,12}\\.[0-9]{1,9}|-)\\s([0-9]{1,3}\\.[0-9]{1,2}%|-)\\s((|-)[0-9]{1,12}\\.[0-9]{1,9}|-)\\s([0-9]{1,3}\\.[0-9]{1,2}%|-)";
                             List<String> list = regString2List(reg,newText);
-                            for (String s : list) {
-                                System.out.println(s+"000000000000000000000000");
+                            if (regJudgeContains(newText)){
+                                countQDII++;
+                                break;
                             }
+
+
+                            String qsname = dealExcelPropertyDao.qsNameIsNull(reg2String("[\\u4e00-\\u9fa5_()]{2,9}",list.get(0)),JJZDM,JZRQ);
+                            if (qsname!=null) {
+                                //如果库里已有,跳过
+                                countYCL++;
+                                System.out.println("库里已有该年报");
+                                break;
+                            }
+
                             //去重
                             List<String> arrayList = removeDuplicate(list);
                             int count = 0;
@@ -205,15 +267,15 @@ public class test2 {
                             double QSZBcount = 0.00;
 
                             for (String anArrayList : arrayList) {
-                                System.out.println(anArrayList+"111111111111111111111");
+                                //System.out.println(anArrayList+"111111111111111111111");
                                 dealExcelProperty.setJJMC(JJMC);
                                 dealExcelProperty.setJJJC(JJJC);
                                 dealExcelProperty.setJJZDM(JJZDM);
+                                dealExcelProperty.setJZRQ(JZRQ);
                                 dealExcelProperty.setNUM(num);
                                 num ++;
-                                String[] result = anArrayList.replaceAll("%","").replaceAll("\r","").replaceAll("\n"," ").split(" ");
+                                String[] result = anArrayList.replaceAll("%","").replaceAll("\n"," ").split(" ");
                                 for (int i1 = 0; i1 < result.length; i1++) {
-                                    dealExcelProperty.setJJZDM(JJZDM);
                                     switch (i1){
                                         case 0:
                                             dealExcelProperty.setQSname(result[i1]);
@@ -265,28 +327,30 @@ public class test2 {
                                                 break;
                                             }
                                          default:
-                                             System.out.println(result[i1]);
+                                             //System.out.println(result[i1]);
                                              break;
                                     }
                                 }
                                 dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
+
+
                             }
                             dealExcelProperty.setQSname("总计");
                             dealExcelProperty.setJJZDM(JJZDM);
                             dealExcelProperty.setNUM(num);
+                            dealExcelProperty.setJZRQ(JZRQ);
                             dealExcelProperty.setQSnum(count);
                             dealExcelProperty.setGPJE(GPcount);
                             dealExcelProperty.setGPJEZB(GPZBcount);
                             dealExcelProperty.setQSJE(QScount);
                             dealExcelProperty.setQSJEZB(QSZBcount);
                             dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
+                            countRK++;
                         }else if(text !=null && text.contains("券商名称") && text.contains("债券交易") && text.contains("回购交易") && text.contains("权证交易")){
-                            String newText = Objects.requireNonNull(loadPDF(i,3, document)).replaceAll(",","");
+                            String newText = Objects.requireNonNull(loadPDF(i,3, document)).replaceAll(",","").replaceAll("\r","");
                             String reg = "[\\u4e00-\\u9fa5_()]{2,9}\\s((|-)[0-9]{1,12}\\.[0-9]{1,9}|-)\\s([0-9]{1,3}\\.[0-9]{1,2}%|-)\\s((|-)[0-9]{1,12}\\.[0-9]{1,9}|-)\\s([0-9]{1,3}\\.[0-9]{1,2}%|-)\\s((|-)[0-9]{1,12}\\.[0-9]{1,9}|-)\\s([0-9]{1,3}\\.[0-9]{1,2}%|-)";
                             List<String> arrayList = regString2List(reg,newText);
-                            for (String s : arrayList) {
-                                System.out.println(s+"22222222222222222222222222");
-                            }
+
                             double ZQcount = 0.00;
                             double ZQZBcount = 0.00;
                             double HGcount = 0.00;
@@ -299,11 +363,11 @@ public class test2 {
                             double QHZBcount = 0.00;
                             for (String anArrayList : arrayList) {
 
-                                String[] result = anArrayList.replaceAll("%","").replaceAll("\r","").replaceAll("\n"," ").split(" ");
+                                String[] result = anArrayList.replaceAll("%","").replaceAll("\n"," ").split(" ");
 
 
                                 for (int i1 = 0; i1 < result.length; i1++) {
-                                    String qsname = dealExcelPropertyDao.qsNameIsNull(reg2String("[\\u4e00-\\u9fa5_()]{2,9}",anArrayList));
+                                    String qsname = dealExcelPropertyDao.qsNameIsNull(reg2String("[\\u4e00-\\u9fa5_()]{2,9}",anArrayList),JJZDM,JZRQ);
                                     if (qsname==null){
                                         //可以添加新增
                                         System.out.println("qsname is null");
@@ -368,14 +432,18 @@ public class test2 {
                                                     break;
                                                 }
                                             default:
-                                                System.out.println(result[i1]);
+                                                //System.out.println(result[i1]);
                                                 break;
                                         }
                                     }
                                 }
+                                dealExcelProperty.setJJZDM(JJZDM);
+                                dealExcelProperty.setJZRQ(JZRQ);
                                 dealExcelPropertyDao.updateDealExcelPropertyByQSname(dealExcelProperty);
                             }
                             dealExcelProperty.setQSname("总计");
+                            dealExcelProperty.setJJZDM(JJZDM);
+                            dealExcelProperty.setJZRQ(JZRQ);
                             dealExcelProperty.setZQJE(ZQcount);
                             dealExcelProperty.setZQJEZB(ZQZBcount);
                             dealExcelProperty.setHGJE(HGcount);
@@ -388,6 +456,16 @@ public class test2 {
                             dealExcelProperty.setQHJEZB(QHZBcount);
                             dealExcelPropertyDao.updateDealExcelPropertyByQSname(dealExcelProperty);
                         }
+//                        else {
+//                            String allText = allText(document);
+//                            if (!allText.contains("基金租用")&&!allText.contains("券商名称")){
+//                                countNO++;
+//                                System.out.println("无交易席位");
+//                                break;
+//                            }
+//                        }
+
+
                     }
                 }
             } catch (IOException ignored) {
@@ -400,10 +478,13 @@ public class test2 {
                 } catch (IOException ignored) {
                 }
             }
+            countZS++;
         }
 
         long end = System.currentTimeMillis();
-        System.out.println("---------------" + (start - end) + "---------------");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("处理了"+countZS+"家,其中库里已存或者文件夹存在相同代码的文件"+countYCL+"家,转型基金"+countZX+"家,QDII:"+countQDII+"家,入库:"+countRK+"家,无基金租用或者无法识别:"+(countZS-countYCL-countZX-countQDII-countRK)+"家");
+        System.out.println("---------------用时" + (start - end)/1000 + "秒---------------");
 
 
 

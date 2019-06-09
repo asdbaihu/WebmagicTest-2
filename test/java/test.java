@@ -50,6 +50,7 @@ public class test {
 
         dealExcelProperty.setJJZDM("");
         dealExcelProperty.setQSname("213213");
+        dealExcelProperty.setJZRQ("123");
         dealExcelProperty.setQSnum(1);
 
         dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
@@ -66,7 +67,8 @@ public class test {
         dealExcelProperty.setZQJE(6663.11);
         dealExcelProperty.setZQJEZB(16.11);
         dealExcelProperty.setQSname("海通证券");
-        String a = dealExcelPropertyDao.qsNameIsNull("海通证券");
+
+        String a = dealExcelPropertyDao.qsNameIsNull("海通证券","000236","2018-12-31");
         if (a==null){
             dealExcelPropertyDao.insertFundJYXW(dealExcelProperty);
         }else {

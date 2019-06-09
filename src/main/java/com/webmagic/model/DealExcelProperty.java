@@ -19,7 +19,8 @@ public class DealExcelProperty extends BaseRowModel {
 
     @ExcelProperty(value = {"序号","序号"},index = 0)
     private Integer NUM;
-
+    @ExcelProperty(value = {"截止日期","截止日期"},index = 0)
+    private String JZRQ;
     @ExcelProperty(value = {"券商名称","券商名称"},index = 0)
     private String QSname;
     @ExcelProperty(value = {"交易单元数量","交易单元数量"},index = 1)
@@ -205,7 +206,13 @@ public class DealExcelProperty extends BaseRowModel {
         this.JJZDM = JJZDM;
     }
 
+    public String getJZRQ() {
+        return JZRQ;
+    }
 
+    public void setJZRQ(String JZRQ) {
+        this.JZRQ = JZRQ;
+    }
 
     public Integer getNUM() {
         return NUM;

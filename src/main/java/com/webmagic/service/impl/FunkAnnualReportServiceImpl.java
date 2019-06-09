@@ -17,9 +17,9 @@ public class FunkAnnualReportServiceImpl implements FunkAnnualReportService{
     }
 
     @Override
-    public String qsNameIsNull(String QSname) {
+    public String qsNameIsNull(String QSname,String JJZDM,String JZRQ) {
 
-        return dealExcelPropertyDao.qsNameIsNull(QSname);
+        return dealExcelPropertyDao.qsNameIsNull(QSname,JJZDM,JZRQ);
     }
 
     @Override
