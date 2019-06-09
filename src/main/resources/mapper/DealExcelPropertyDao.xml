@@ -113,4 +113,13 @@
     </update>
 
 
+    <select id="selectAllByJZRQ" parameterType="String"
+            resultType="DealExcelProperty">
+        select NUM,JZRQ,QSname,QSnum,GPJE,GPJEZB,QSJE,QSJEZB,ZQJE,ZQJEZB,HGJE,HGJEZB,QZJE,QZJEZB,JJJE,JJJEZB,QHJE,QHJEZB,JJMC,JJJC,JJZDM from jyxw
+        <where>
+            JZRQ = #{JZRQ}
+        </where>
+    </select>
+
+
 </mapper>

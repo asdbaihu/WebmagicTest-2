@@ -5,6 +5,8 @@ import com.webmagic.model.DealExcelProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FunkAnnualReportServiceImpl implements FunkAnnualReportService{
     @Autowired
@@ -25,5 +27,10 @@ public class FunkAnnualReportServiceImpl implements FunkAnnualReportService{
     @Override
     public void updateDealExcelPropertyByQSname(DealExcelProperty dealExcelProperty) {
         dealExcelPropertyDao.updateDealExcelPropertyByQSname(dealExcelProperty);
+    }
+
+    @Override
+    public List<DealExcelProperty> selectAllByJZRQ(DealExcelProperty dealExcelProperty, String JZRQ) {
+        return dealExcelPropertyDao.selectAllByJZRQ(dealExcelProperty,JZRQ);
     }
 }

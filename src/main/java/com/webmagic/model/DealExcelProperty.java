@@ -7,51 +7,53 @@ import java.util.Date;
 
 
 public class DealExcelProperty extends BaseRowModel {
-
+//@ExcelProperty(value = {"期货交易","期货占比"},index = 15)
     //JJMC,JJJC,JJZDM
+
+    @ExcelProperty(value = {"基金名称","基金名称"},index = 0)
     private String JJMC;
-
+    @ExcelProperty(value = {"基金简称","基金简称"},index = 1)
     private String JJJC;
-
+    @ExcelProperty(value = {"基金主代码","基金主代码"},index = 2)
     private String JJZDM;
 
     //private Date XGSJ;
 
-    @ExcelProperty(value = {"序号","序号"},index = 0)
+    @ExcelProperty(value = {"序号","序号"},index = 3)
     private Integer NUM;
-    @ExcelProperty(value = {"截止日期","截止日期"},index = 0)
+    @ExcelProperty(value = {"截止日期","截止日期"},index = 4)
     private String JZRQ;
-    @ExcelProperty(value = {"券商名称","券商名称"},index = 0)
+    @ExcelProperty(value = {"券商名称","券商名称"},index = 5)
     private String QSname;
-    @ExcelProperty(value = {"交易单元数量","交易单元数量"},index = 1)
+    @ExcelProperty(value = {"交易单元数量","交易单元数量"},index = 6)
     private Integer QSnum;
-    @ExcelProperty(value = {"股票交易","股票成交金额"},index = 2)
+    @ExcelProperty(value = {"股票交易","股票成交金额"},index = 7)
     private Double GPJE;
-    @ExcelProperty(value = {"股票交易","股票占比"},index = 3)
+    @ExcelProperty(value = {"股票交易","股票交易占比"},index = 8)
     private Double GPJEZB;
-    @ExcelProperty(value = {"应支付该券商的佣金","佣金成交金额"},index = 4)
+    @ExcelProperty(value = {"应支付该券商的佣金 ","佣金"},index = 9)
     private Double QSJE;
-    @ExcelProperty(value = {"应支付该券商的佣金","佣金占比"},index = 5)
+    @ExcelProperty(value = {"应支付该券商的佣金 ","佣金占比"},index = 10)
     private Double QSJEZB;
-    @ExcelProperty(value = {"债券交易","债券成交金额"},index = 6)
+    @ExcelProperty(value = {"债券交易","债券成交金额"},index = 11)
     private Double ZQJE;
-    @ExcelProperty(value = {"债券交易","债券占比"},index = 7)
+    @ExcelProperty(value = {"债券交易","债券占比"},index = 12)
     private Double ZQJEZB;
-    @ExcelProperty(value = {"回购交易","回购成交金额"},index = 8)
+    @ExcelProperty(value = {"债券回购交易","债券回购成交金额"},index = 13)
     private Double HGJE;
-    @ExcelProperty(value = {"回购交易","回购占比"},index = 9)
+    @ExcelProperty(value = {"债券回购交易","债券回购占比"},index = 14)
     private Double HGJEZB;
-    @ExcelProperty(value = {"权证交易","权证成交金额"},index = 10)
+    @ExcelProperty(value = {"权证交易","权证成交金额"},index = 15)
     private Double QZJE;
-    @ExcelProperty(value = {"权证交易","权证占比"},index = 11)
+    @ExcelProperty(value = {"权证交易","权证占比"},index = 16)
     private Double QZJEZB;
-    @ExcelProperty(value = {"基金交易","基金成交金额"},index = 12)
+    @ExcelProperty(value = {"基金交易","基金成交金额"},index = 17)
     private Double JJJE;
-    @ExcelProperty(value = {"基金交易","基金占比"},index = 13)
+    @ExcelProperty(value = {"基金交易","基金占比"},index = 18)
     private Double JJJEZB;
-    @ExcelProperty(value = {"期货交易","期货成交金额"},index = 14)
+    @ExcelProperty(index = 19)
     private Double QHJE;
-    @ExcelProperty(value = {"期货交易","期货占比"},index = 15)
+    @ExcelProperty(index = 20)
     private Double QHJEZB;
 
     public String getQSname() {
@@ -220,5 +222,32 @@ public class DealExcelProperty extends BaseRowModel {
 
     public void setNUM(Integer NUM) {
         this.NUM = NUM;
+    }
+
+    @Override
+    public String toString() {
+        return "DealExcelProperty{" +
+                "JJMC='" + JJMC + '\'' +
+                ", JJJC='" + JJJC + '\'' +
+                ", JJZDM='" + JJZDM + '\'' +
+                ", NUM=" + NUM +
+                ", JZRQ='" + JZRQ + '\'' +
+                ", QSname='" + QSname + '\'' +
+                ", QSnum=" + QSnum +
+                ", GPJE=" + GPJE +
+                ", GPJEZB=" + GPJEZB +
+                ", QSJE=" + QSJE +
+                ", QSJEZB=" + QSJEZB +
+                ", ZQJE=" + ZQJE +
+                ", ZQJEZB=" + ZQJEZB +
+                ", HGJE=" + HGJE +
+                ", HGJEZB=" + HGJEZB +
+                ", QZJE=" + QZJE +
+                ", QZJEZB=" + QZJEZB +
+                ", JJJE=" + JJJE +
+                ", JJJEZB=" + JJJEZB +
+                ", QHJE=" + QHJE +
+                ", QHJEZB=" + QHJEZB +
+                '}';
     }
 }
